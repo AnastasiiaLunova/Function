@@ -7,14 +7,14 @@ public class MyFunctionTest {
 	@Test
 	public void getFactorial() {
 		MyFunction myFirstTest = new MyFunction();
-		int runTest = myFirstTest.getFactorial(5);
-		assertEquals(120, runTest);
+		int runTest = myFirstTest.getFactorial(2);
+		assertEquals(2, runTest);
 	}
 	
 	@Test
 	public void makeFormula () {
 		MyFunction myFirstTest = new MyFunction();
-		int runTest = myFirstTest.makeFormula(4);
-		assertEquals(264, runTest);
+		int runTest = myFirstTest.makeFormula(2);
+		assertEquals(18, runTest);
 	}
 }
