@@ -10,6 +10,10 @@ public class MyFunction {
 	}
 	
 	int makeFormula (int x) {
+		if (x < 0 || x > 25) {
+			return 0;	
+		}
+		
 		int factorial=this.getFactorial(x);
 		return (x+7)*factorial;
 		

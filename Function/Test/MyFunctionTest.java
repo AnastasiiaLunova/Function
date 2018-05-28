@@ -7,8 +7,8 @@ public class MyFunctionTest {
 	@Test
 	public void getFactorial() {
 		MyFunction myFirstTest = new MyFunction();
-		int runTest = myFirstTest.getFactorial(5);
-		assertEquals(120, runTest);
+		int runTest = myFirstTest.getFactorial(4);
+		assertEquals(24, runTest);
 	}
 	
 	@Test
@@ -16,5 +16,13 @@ public class MyFunctionTest {
 		MyFunction myFirstTest = new MyFunction();
 		int runTest = myFirstTest.makeFormula(4);
 		assertEquals(264, runTest);
+		int runTestTwo = myFirstTest.makeFormula(-4);
+		assertEquals(0, runTestTwo );
+		int runTestThree = myFirstTest.makeFormula(27);
+		assertEquals(0, runTestThree );
+		
 	}
+	
+	
 }
+
